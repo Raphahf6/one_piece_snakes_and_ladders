@@ -14,6 +14,16 @@ class Footer extends StatelessWidget {
       builder: (BuildContext context) {
         return Container(
           height: 140,
+          decoration: BoxDecoration(
+              color: Color(0xff0B4F6C),
+              boxShadow: [
+                BoxShadow(
+                    offset: const Offset(0, -10),
+                    blurRadius: 35,
+                    color: Colors.black)
+              ],
+              border: Border.all(color: Colors.black, width: 4.0),
+              borderRadius: BorderRadius.all(Radius.circular(0))),
           child: PlayDices(
             snakeLaddersStore: snakeLaddersStore,
             dicesOne: snakeLaddersStore.currentDiceOne,

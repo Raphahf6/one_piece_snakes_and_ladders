@@ -1,27 +1,32 @@
 import 'package:demoji/demoji.dart';
+import 'package:game_snakes_ladders/widgets/player.dart';
 
 int index = 100;
 
 class SnakesLaddersConst {
   static List snakesLadders = [
     {
+      'position': 07,
+      'positionFuture': 27,
+      'title': 'Casa com Nami !!!',
+      'message': 'Eu sou a navegadora ! Vamos avançar 20 casas :D'
+    },
+    {
       'position': 08,
       'positionFuture': 01,
-      'title': 'Ops... ' + Demoji.snake,
-      'message':
-          ' terá que voltar a casa 01, você caiu em uma casa onde está localizada uma cobra.'
+      'title': 'HA HA HA HA !! Agora você não escapa dos meus raios',
+      'message': ' \nQue má sorte.... ENEL !!!!!. Vamos correr. Volte 07 casas'
     },
     {
       'position': 17,
       'positionFuture': 10,
-      'title': 'Que azar... ' + Demoji.snake,
-      'message':
-          'Você precisa voltar até a casa 10, você caiu em uma casa onde está localizada uma cobra e precisa voltar 07 casas'
+      'title': 'HA HA HA HA !! Agora você não escapa dos meus raios',
+      'message': 'Que má sorte.... ENEL !!!!!. Vamos correr. Volte 07 casas'
     },
     {
-      'position': 87,
-      'positionFuture': 71,
-      'title': 'Bahhh... ' + Demoji.snake,
+      'position': 26,
+      'positionFuture': 15,
+      'title': 'Bahhh... ' + 'position',
       'message':
           ' terá que voltar a casa 71, você caiu em uma casa onde está localizada a cabeça da cobra.'
     },

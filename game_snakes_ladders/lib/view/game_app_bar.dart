@@ -36,7 +36,11 @@ class GameAppBar extends StatelessWidget {
                   child: Center(
                     child: Text(
                       'VS',
-                      style: TextStyle(fontSize: 80, color: Colors.white70),
+                      style: TextStyle(
+                        fontSize: 80,
+                        color: Colors.white70,
+                        fontStyle: FontStyle.italic,
+                      ),
                     ),
                   )),
               Container(

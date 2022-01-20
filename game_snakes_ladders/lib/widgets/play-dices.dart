@@ -48,7 +48,6 @@ class _PlayDicesState extends State<PlayDices> {
                 total == widget.dicesOne + diceTwo;
               }
             },
-            style: ButtonStyle(),
             child: Text('JOGAR'),
           ),
           DiceItem(
