@@ -1,3 +1,3 @@
 ﻿# game_snakes_and_ladders
-![Screenshot_1642698270](https://user-images.githubusercontent.com/39925526/150386778-af87b9b6-fdb1-44f8-9d9d-1ebe60826942.png)
 
+![Screenshot_1642741561](https://user-images.githubusercontent.com/39925526/150469401-9a108d51-c641-4c99-89e8-4410749e07d6.png)
