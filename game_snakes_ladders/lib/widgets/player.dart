@@ -5,18 +5,17 @@ class Player extends StatelessWidget {
   const Player({Key key, this.numPlayer}) : super(key: key);
   final String numPlayer;
 
-
   @override
   Widget build(BuildContext context) {
     Utils utils = new Utils();
     return Padding(
-      padding: const EdgeInsets.only(left: 10, right: 10),
+      padding: const EdgeInsets.only(top: 10, bottom: 10, right: 20, left: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
             width: 150,
-            height: 40,
+            height: 50,
             child: Center(
                 child: Text(
               'Jogador ${numPlayer}',

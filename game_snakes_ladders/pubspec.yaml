@@ -68,6 +68,7 @@ flutter:
     - assets/img/zoro.png
     - assets/img/enel.png
     - assets/img/nami.png
+    - assets/img/arrow.png
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -14,9 +14,15 @@ class GameAppBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                width: 130,
-                height: 130,
+                width: 140,
+                height: 140,
                 decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                        offset: const Offset(0, -10),
+                        blurRadius: 35,
+                        color: Colors.black)
+                  ],
                   border: Border.all(color: Colors.black38, width: 10),
                   color: Colors.red[200],
                 ),
@@ -27,9 +33,15 @@ class GameAppBar extends StatelessWidget {
                 ),
               ),
               Container(
-                  width: 150,
-                  height: 150,
+                  width: 160,
+                  height: 160,
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                          offset: const Offset(0, -10),
+                          blurRadius: 35,
+                          color: Colors.black)
+                    ],
                     border: Border.all(color: Colors.black38, width: 10),
                     color: Colors.red[200],
                   ),
@@ -44,9 +56,15 @@ class GameAppBar extends StatelessWidget {
                     ),
                   )),
               Container(
-                width: 130,
-                height: 130,
+                width: 140,
+                height: 140,
                 decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                        offset: const Offset(0, -10),
+                        blurRadius: 35,
+                        color: Colors.black)
+                  ],
                   border: Border.all(color: Colors.black38, width: 10),
                   color: Colors.red[200],
                 ),

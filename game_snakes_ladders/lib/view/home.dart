@@ -110,36 +110,44 @@ class _HomeState extends State<Home> {
                                                   mainAxisAlignment:
                                                       MainAxisAlignment.center,
                                                   children: [
-                                                    index % 15 == 4
+                                                    index == 1
                                                         ? Center(
                                                             child: Image.asset(
-                                                              'assets/img/enel.png',
+                                                              'assets/img/arrow.png',
                                                               height: 100,
                                                               width: 100,
                                                             ),
                                                           )
-
-                                                        //se a cor for marrom
-                                                        : index % 15 == 7
-                                                            ? Image.asset(
-                                                                'assets/img/nami.png')
-                                                            : Text(
-                                                                index
-                                                                    .toString(),
-                                                                style: TextStyle(
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .w400,
-                                                                    fontStyle:
-                                                                        FontStyle
-                                                                            .normal,
-                                                                    fontSize:
-                                                                        30,
-                                                                    color: Colors
-                                                                        .black
-                                                                        .withOpacity(
-                                                                            0.7)),
+                                                        : index % 15 == 4
+                                                            ? Center(
+                                                                child:
+                                                                    Image.asset(
+                                                                  'assets/img/enel.png',
+                                                                  height: 100,
+                                                                  width: 100,
+                                                                ),
                                                               )
+
+                                                            //se a cor for marrom
+                                                            : index % 15 == 7
+                                                                ? Image.asset(
+                                                                    'assets/img/nami.png')
+                                                                : Text(
+                                                                    index
+                                                                        .toString(),
+                                                                    style: TextStyle(
+                                                                        fontWeight:
+                                                                            FontWeight
+                                                                                .w400,
+                                                                        fontStyle:
+                                                                            FontStyle
+                                                                                .normal,
+                                                                        fontSize:
+                                                                            30,
+                                                                        color: Colors
+                                                                            .black
+                                                                            .withOpacity(0.7)),
+                                                                  )
                                                   ]),
                                             ),
                                           ),

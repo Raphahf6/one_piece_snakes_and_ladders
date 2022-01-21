@@ -26,9 +26,9 @@ class _PlayDicesState extends State<PlayDices> {
     final random = new Random();
 
     return BottomAppBar(
-      color: const Color(0xff02B2D42),
+      color: const Color(0xff0C1B33),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           DiceItem(
             dice: DicesConst.dice(
@@ -37,6 +37,12 @@ class _PlayDicesState extends State<PlayDices> {
             springController: SpringController(initialAnim: Motion.play),
           ),
           ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                primary: Color(0xff03B5AA),
+                shadowColor: Color(0xff03B5AA),
+                elevation: 30,
+                shape: const BeveledRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10)))),
             onPressed: () {
               if (widget.snakeLaddersStore.totalPlayerOne == 100 ||
                   widget.snakeLaddersStore.totalPlayerTwo == 100) {
