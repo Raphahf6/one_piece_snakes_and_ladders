@@ -11,7 +11,7 @@
 - Dialogos interativos.
 
 ### 📋 Pré-requisitos
-Flutter SDK, Android Studio Emulador de Android.
+Flutter SDK, Android Studio Emulador de Android ou um Celular android 
 
 ### 🔧 Instalação
 O Flutter SDK pode ser instalado através deste link: https://docs.flutter.dev/get-started/install
@@ -33,7 +33,8 @@ flutter run
 ![Screenshot_1642754470](https://user-images.githubusercontent.com/39925526/150494705-0195eac3-6e0e-4043-a7a9-e14d5c88f3dc.png)
 
 
-
+### 🔧 Em desenvolvimento....
+- Game em fase de desenvolvimento... Aguardem novas funcionalidades
 
 
 ## ✒️ Autor
