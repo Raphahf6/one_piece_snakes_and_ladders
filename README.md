@@ -7,6 +7,7 @@
 
 - Game de tabuleiro com seus personagens favoritos One Piece.
 - Ao cair em uma casa com inimigo, sofra as consequencias!
+- Nami esta ai para te ajudar.
 - Dialogos interativos.
 
 ### 📋 Pré-requisitos
