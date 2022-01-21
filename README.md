@@ -11,7 +11,7 @@ Flutter SDK, Android Studio Emulador de Android
 O Flutter SDK pode ser instalado através deste link: https://docs.flutter.dev/get-started/install
 
 ## ⚙️ Executando
-Para executar basta estar no diretório do arquivo main no prompt de comando (terminal) e digitar: 
+Para testar o projeto, abra o diretorio no promt "cmd" e execute os seguintes comandos: 
 
 ```
 flutter pub get
