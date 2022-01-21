@@ -195,8 +195,8 @@ class Utils {
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    child: Text('Entendi',
-                        style: TextStyle(color: Colors.black12)))
+                    child:
+                        Text('Entendi', style: TextStyle(color: Colors.black)))
               ],
             );
           });
