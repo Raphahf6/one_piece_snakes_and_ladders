@@ -9,30 +9,37 @@ class Player extends StatelessWidget {
   Widget build(BuildContext context) {
     Utils utils = new Utils();
     return Padding(
-      padding: const EdgeInsets.only(top: 10, bottom: 10, right: 20, left: 20),
+      padding: const EdgeInsets.all(20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            width: 150,
+            width: 120,
             height: 50,
             child: Center(
                 child: Text(
               'Jogador ${numPlayer}',
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                  color: Colors.white70),
             )),
             decoration: BoxDecoration(
-                border: Border.all(color: Colors.orange[300]),
+                border: Border.all(color: Color(0xffD62246)),
                 borderRadius: BorderRadius.circular(10),
-                boxShadow: [BoxShadow(color: Colors.orange[100])]),
+                boxShadow: [BoxShadow(color: Color(0xffD62246))]),
           ),
           ElevatedButton(
             onPressed: () {
               utils.dialogRestart(context);
             },
-            child: Icon(Icons.autorenew),
+            child: Icon(
+              Icons.autorenew,
+              color: Colors.white70,
+              size: 25,
+            ),
             style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.orange)),
+                backgroundColor: MaterialStateProperty.all(Color(0xffD62246))),
           ),
         ],
       ),

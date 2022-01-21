@@ -38,8 +38,8 @@ class _PlayDicesState extends State<PlayDices> {
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-                primary: Color(0xff03B5AA),
-                shadowColor: Color(0xff03B5AA),
+                primary: Color(0xff0D62246),
+                shadowColor: Color(0xffD62246),
                 elevation: 30,
                 shape: const BeveledRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10)))),
@@ -54,7 +54,10 @@ class _PlayDicesState extends State<PlayDices> {
                 total == widget.dicesOne + diceTwo;
               }
             },
-            child: Text('JOGAR'),
+            child: Text(
+              'JOGAR',
+              style: TextStyle(color: Colors.white70),
+            ),
           ),
           DiceItem(
             dice: DicesConst.dice(

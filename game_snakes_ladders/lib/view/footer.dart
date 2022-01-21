@@ -15,15 +15,15 @@ class Footer extends StatelessWidget {
         return Container(
           height: 120,
           decoration: BoxDecoration(
-              color: Color(0xff2B9EB3),
-              boxShadow: [
-                BoxShadow(
-                    offset: const Offset(0, -10),
-                    blurRadius: 35,
-                    color: Color(0xff2B9EB3))
-              ],
-              border: Border.all(color: Color(0xff03B5AA), width: 6),
-              borderRadius: BorderRadius.all(Radius.circular(15))),
+            color: Color(0xffD62246),
+            boxShadow: [
+              BoxShadow(
+                  offset: const Offset(0, -5),
+                  blurRadius: 80,
+                  color: Color(0xffD62246))
+            ],
+            border: Border.all(color: Color(0xffD62246), width: 4),
+          ),
           child: PlayDices(
             snakeLaddersStore: snakeLaddersStore,
             dicesOne: snakeLaddersStore.currentDiceOne,
