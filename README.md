@@ -11,7 +11,7 @@
 - Dialogos interativos.
 
 ### 📋 Pré-requisitos
-Flutter SDK, Android Studio Emulador de Android.
+Flutter SDK, Android Studio Emulador de Android ou um Celular android 
 
 ### 🔧 Instalação
 O Flutter SDK pode ser instalado através deste link: https://docs.flutter.dev/get-started/install
