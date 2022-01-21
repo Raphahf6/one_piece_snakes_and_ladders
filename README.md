@@ -1,7 +1,7 @@
 ﻿# One Piece Snake And Ladders 
 
-# Seleção de Desenvolvedor de Software - Escribo
-# Teste Técnico 02
+## Seleção de Desenvolvedor de Software - Escribo
+## Teste Técnico 02
 
 ### 📋 Pré-requisitos
 Flutter SDK, Android Studio Emulador de Android
