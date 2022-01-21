@@ -180,21 +180,23 @@ class Utils {
           barrierDismissible: false,
           builder: (ctx) {
             return AlertDialog(
-              backgroundColor: Color(0xff2B9EB3),
+              backgroundColor: Colors.orange[100],
               elevation: 10,
               title: Text(
                 'Numero sorteado: $dice',
-                style: TextStyle(color: Colors.black),
+                style: TextStyle(color: Colors.black54),
               ),
               content: Text(
-                  'Jogador: $currentPlayer indo para a casa $element \n\n PARABENS !! \n\n Jogador: $currentPlayer ganhou uma nova jogada por tirar dados iguals'),
+                'Jogador: $currentPlayer indo para a casa $element \n\n PARABENS !! \n\n Jogador: $currentPlayer ganhou uma nova jogada por tirar dados iguals',
+                style: TextStyle(color: Colors.black54),
+              ),
               actions: [
                 TextButton(
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    child:
-                        Text('Entendi', style: TextStyle(color: Colors.black)))
+                    child: Text('Entendi',
+                        style: TextStyle(color: Colors.black12)))
               ],
             );
           });
@@ -204,7 +206,7 @@ class Utils {
         barrierDismissible: false,
         builder: (ctx) {
           return AlertDialog(
-            backgroundColor: Color(0xff2B9EB3),
+            backgroundColor: Colors.orange[100],
             elevation: 10,
             title: Text(
               'Numero sorteado: $dice',
