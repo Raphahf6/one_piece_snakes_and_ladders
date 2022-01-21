@@ -13,7 +13,7 @@ class Footer extends StatelessWidget {
       name: 'PlayDices',
       builder: (BuildContext context) {
         return Container(
-          height: 120,
+          height: 100,
           decoration: BoxDecoration(
             color: Color(0xffD62246),
             boxShadow: [
@@ -22,7 +22,7 @@ class Footer extends StatelessWidget {
                   blurRadius: 80,
                   color: Color(0xffD62246))
             ],
-            border: Border.all(color: Color(0xffD62246), width: 4),
+            border: Border.all(color: Color(0xffD62246), width: 3),
           ),
           child: PlayDices(
             snakeLaddersStore: snakeLaddersStore,

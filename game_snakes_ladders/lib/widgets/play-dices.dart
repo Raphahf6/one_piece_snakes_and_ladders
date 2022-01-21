@@ -39,7 +39,6 @@ class _PlayDicesState extends State<PlayDices> {
           ElevatedButton(
             style: ElevatedButton.styleFrom(
                 primary: Color(0xff0D62246),
-                shadowColor: Color(0xffD62246),
                 elevation: 30,
                 shape: const BeveledRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10)))),

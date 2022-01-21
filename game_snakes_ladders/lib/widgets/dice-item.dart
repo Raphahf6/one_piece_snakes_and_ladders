@@ -19,8 +19,8 @@ class DiceItem extends StatelessWidget {
           animStatus: (AnimStatus status) {},
           child: Image.asset(
             dice,
-            height: 100,
-            width: 100,
+            height: 80,
+            width: 80,
           )),
     );
   }
