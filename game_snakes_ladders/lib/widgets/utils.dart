@@ -170,4 +170,55 @@ class Utils {
           );
         });
   }
+
+  dialog(context, element, currentPlayer, dice1, dice2) {
+    this.snakesLaddersStore = GetIt.instance<SnakesLadders>();
+    int dice = dice1 + dice2;
+    if (dice1 == dice2) {
+      return showDialog(
+          context: context,
+          barrierDismissible: false,
+          builder: (ctx) {
+            return AlertDialog(
+              backgroundColor: Color(0xff2B9EB3),
+              elevation: 10,
+              title: Text(
+                'Numero sorteado: $dice',
+                style: TextStyle(color: Colors.black),
+              ),
+              content: Text(
+                  'Jogador: $currentPlayer indo para a casa $element \n\n PARABENS !! \n\n Jogador: $currentPlayer ganhou uma nova jogada por tirar dados iguals'),
+              actions: [
+                TextButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child:
+                        Text('Entendi', style: TextStyle(color: Colors.black)))
+              ],
+            );
+          });
+    }
+    return showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (ctx) {
+          return AlertDialog(
+            backgroundColor: Color(0xff2B9EB3),
+            elevation: 10,
+            title: Text(
+              'Numero sorteado: $dice',
+              style: TextStyle(color: Colors.black),
+            ),
+            content: Text('Jogador: $currentPlayer indo para a casa $element'),
+            actions: [
+              TextButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text('Entendi', style: TextStyle(color: Colors.black)))
+            ],
+          );
+        });
+  }
 }
