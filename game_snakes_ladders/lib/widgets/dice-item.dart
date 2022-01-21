@@ -9,7 +9,7 @@ class DiceItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 50, right: 50),
+      margin: EdgeInsets.only(left: 10, right: 10),
       child: Spring.rotate(
           springController: springController,
           alignment: Alignment.center,
@@ -19,7 +19,7 @@ class DiceItem extends StatelessWidget {
           animStatus: (AnimStatus status) {},
           child: Image.asset(
             dice,
-            height: MediaQuery.of(context).size.height * .2,
+            height: MediaQuery.of(context).size.height * .2 / 2,
             width: MediaQuery.of(context).size.width * .1,
           )),
     );

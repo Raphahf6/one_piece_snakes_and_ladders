@@ -79,7 +79,7 @@ class GameAppBar extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 48, right: 48, top: 10),
+              padding: const EdgeInsets.only(left: 30, right: 30, top: 10),
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
