@@ -5,7 +5,7 @@
 
 # Teste Técnico 02
 
-- Game da tabuleiro com seus personagens favoritos One Piece! 
+- Game de tabuleiro com seus personagens favoritos One Piece! 
 - Ao cair em uma casa com inimigo, sofra as consequencias.
 - Dialogos interativos.
 
