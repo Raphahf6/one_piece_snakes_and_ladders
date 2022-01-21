@@ -1,7 +1,8 @@
 ﻿# One Piece Snake And Ladders 
 
 ## Seleção de Desenvolvedor de Software - Escribo
-## Teste Técnico 02
+## Teste Técnico 02: [Seleção Desenvolvedor Escribo (Desafio 02).pdf](https://github.com/Raphahf6/game_snakes_and_ladders/files/7910822/Selecao.Desenvolvedor.Escribo.Desafio.02.pdf)
+
 
 ### 📋 Pré-requisitos
 Flutter SDK, Android Studio Emulador de Android
