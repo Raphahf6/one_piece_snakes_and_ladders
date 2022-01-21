@@ -20,9 +20,9 @@ flutter pub get
 ```
 flutter run
 ```
-### images
+### Print Screen
+![Screenshot_1642750591](https://user-images.githubusercontent.com/39925526/150485764-d0bf3638-f487-4e6d-affa-6ecf36452adc.png)
 
-![Screenshot_1642749716](https://user-images.githubusercontent.com/39925526/150484799-7bd5c4b6-46d3-4b58-a3ce-235a97def4d9.png)
 
 
 
