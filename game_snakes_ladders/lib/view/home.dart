@@ -162,6 +162,8 @@ class _HomeState extends State<Home> {
                                                                       index
                                                                           .toString(),
                                                                       style: TextStyle(
+                                                                          decoration: TextDecoration
+                                                                              .underline,
                                                                           fontWeight: FontWeight
                                                                               .w400,
                                                                           fontStyle: FontStyle
