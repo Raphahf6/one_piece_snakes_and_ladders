@@ -14,8 +14,8 @@ class Player extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            width: 120,
-            height: 50,
+            width: MediaQuery.of(context).size.width * .3,
+            height: MediaQuery.of(context).size.width * .2 / 2,
             child: Center(
                 child: Text(
               'Jogador ${numPlayer}',

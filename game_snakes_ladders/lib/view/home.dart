@@ -26,11 +26,10 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    List enel = [8, 15, 16];
     return Scaffold(
       backgroundColor: Color(0xff02B2D42),
       appBar: AppBar(
-        toolbarHeight: 230,
+        toolbarHeight: MediaQuery.of(context).size.height * .2,
         backgroundColor: Colors.transparent,
         title: GameAppBar(),
       ),
@@ -54,7 +53,7 @@ class _HomeState extends State<Home> {
                   Observer(
                     builder: (BuildContext context) {
                       return GridView.builder(
-                          padding: EdgeInsets.all(1),
+                          padding: EdgeInsets.all(0),
                           addAutomaticKeepAlives: true,
                           gridDelegate:
                               new SliverGridDelegateWithFixedCrossAxisCount(
@@ -97,58 +96,79 @@ class _HomeState extends State<Home> {
                                     builder: (BuildContext context) {
                                       return Stack(
                                         children: [
-                                          Container(
-                                            width: 125,
-                                            height: 125,
-                                            decoration: BoxDecoration(
-                                                color: color,
-                                                border: Border.all(
-                                                    color: Colors.black38,
-                                                    width: 10)),
-                                            child: Center(
-                                              child: Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  children: [
-                                                    index == 1
-                                                        ? Center(
-                                                            child: Image.asset(
-                                                              'assets/img/arrow.png',
-                                                              height: 100,
-                                                              width: 100,
-                                                            ),
-                                                          )
-                                                        : index % 15 == 4
-                                                            ? Center(
-                                                                child:
-                                                                    Image.asset(
-                                                                  'assets/img/enel.png',
-                                                                  height: 100,
-                                                                  width: 100,
-                                                                ),
-                                                              )
+                                          Padding(
+                                            padding: const EdgeInsets.all(2.2),
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                  color: color,
+                                                  border: Border.all(
+                                                      color: Colors.black38,
+                                                      width:
+                                                          MediaQuery.of(context)
+                                                                  .size
+                                                                  .width *
+                                                              .1 /
+                                                              5)),
+                                              child: Center(
+                                                child: Row(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .center,
+                                                    children: [
+                                                      index == 1
+                                                          ? Center(
+                                                              child: Image.asset(
+                                                                  'assets/img/arrow.png',
+                                                                  height: MediaQuery.of(
+                                                                              context)
+                                                                          .size
+                                                                          .width *
+                                                                      .1,
+                                                                  width: MediaQuery.of(
+                                                                              context)
+                                                                          .size
+                                                                          .height *
+                                                                      .1 /
+                                                                      1.5),
+                                                            )
+                                                          : index % 15 == 4
+                                                              ? Center(
+                                                                  child: Image
+                                                                      .asset(
+                                                                    'assets/img/enel.png',
+                                                                    height: MediaQuery.of(context)
+                                                                            .size
+                                                                            .width *
+                                                                        .2,
+                                                                    width: MediaQuery.of(context)
+                                                                            .size
+                                                                            .height *
+                                                                        .1 /
+                                                                        1.2,
+                                                                  ),
+                                                                )
 
-                                                            //se a cor for marrom
-                                                            : index % 15 == 7
-                                                                ? Image.asset(
-                                                                    'assets/img/nami.png')
-                                                                : Text(
-                                                                    index
-                                                                        .toString(),
-                                                                    style: TextStyle(
-                                                                        fontWeight:
-                                                                            FontWeight
-                                                                                .w400,
-                                                                        fontStyle:
-                                                                            FontStyle
-                                                                                .normal,
-                                                                        fontSize:
-                                                                            30,
-                                                                        color: Colors
-                                                                            .black
-                                                                            .withOpacity(0.7)),
-                                                                  )
-                                                  ]),
+                                                              //se a cor for marrom
+                                                              : index % 15 == 7
+                                                                  ? Image.asset(
+                                                                      'assets/img/nami.png')
+                                                                  : Text(
+                                                                      index
+                                                                          .toString(),
+                                                                      style: TextStyle(
+                                                                          fontWeight: FontWeight
+                                                                              .w400,
+                                                                          fontStyle: FontStyle
+                                                                              .normal,
+                                                                          fontSize: MediaQuery.of(context).size.width *
+                                                                              .1 /
+                                                                              2,
+                                                                          color: Colors
+                                                                              .black
+                                                                              .withOpacity(0.7)),
+                                                                    )
+                                                    ]),
+                                              ),
                                             ),
                                           ),
                                           Play(

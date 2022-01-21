@@ -19,7 +19,7 @@ class Footer extends StatelessWidget {
             boxShadow: [
               BoxShadow(
                   offset: const Offset(0, -5),
-                  blurRadius: 80,
+                  blurRadius: 10,
                   color: Color(0xffD62246))
             ],
             border: Border.all(color: Color(0xffD62246), width: 3),

@@ -1,5 +1,3 @@
-import 'package:demoji/demoji.dart';
-
 int index = 100;
 
 class SnakesLaddersConst {
