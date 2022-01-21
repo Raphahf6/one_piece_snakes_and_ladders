@@ -121,10 +121,10 @@ class _HomeState extends State<Home> {
                                                         MainAxisAlignment
                                                             .center,
                                                     children: [
-                                                      index == 1
+                                                      index == 100
                                                           ? Center(
                                                               child: Image.asset(
-                                                                  'assets/img/arrow.png',
+                                                                  'assets/img/sunny.png',
                                                                   height: MediaQuery.of(
                                                                               context)
                                                                           .size
@@ -137,44 +137,49 @@ class _HomeState extends State<Home> {
                                                                       .1 /
                                                                       1.5),
                                                             )
-                                                          : index % 15 == 4
+                                                          : index == 1
                                                               ? Center(
-                                                                  child: Image
-                                                                      .asset(
-                                                                    'assets/img/enel.png',
-                                                                    height: MediaQuery.of(context)
-                                                                            .size
-                                                                            .width *
-                                                                        .2,
-                                                                    width: MediaQuery.of(context)
-                                                                            .size
-                                                                            .height *
-                                                                        .1 /
-                                                                        1.2,
-                                                                  ),
+                                                                  child: Image.asset(
+                                                                      'assets/img/arrow.png',
+                                                                      height: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width *
+                                                                          .1,
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .height *
+                                                                          .1 /
+                                                                          1.5),
                                                                 )
-
-                                                              //se a cor for marrom
-                                                              : index % 15 == 7
-                                                                  ? Image.asset(
-                                                                      'assets/img/nami.png')
-                                                                  : Text(
-                                                                      index
-                                                                          .toString(),
-                                                                      style: TextStyle(
-                                                                          decoration: TextDecoration
-                                                                              .underline,
-                                                                          fontWeight: FontWeight
-                                                                              .w400,
-                                                                          fontStyle: FontStyle
-                                                                              .normal,
-                                                                          fontSize: MediaQuery.of(context).size.width *
-                                                                              .1 /
-                                                                              2,
-                                                                          color: Colors
-                                                                              .black
-                                                                              .withOpacity(0.7)),
+                                                              : index % 15 == 4
+                                                                  ? Center(
+                                                                      child: Image
+                                                                          .asset(
+                                                                        'assets/img/enel.png',
+                                                                        height:
+                                                                            MediaQuery.of(context).size.width *
+                                                                                .2,
+                                                                        width: MediaQuery.of(context).size.height *
+                                                                            .1 /
+                                                                            1.2,
+                                                                      ),
                                                                     )
+
+                                                                  //se a cor for marrom
+                                                                  : index % 15 ==
+                                                                          7
+                                                                      ? Image.asset(
+                                                                          'assets/img/nami.png')
+                                                                      : Text(
+                                                                          index
+                                                                              .toString(),
+                                                                          style: TextStyle(
+                                                                              decoration: TextDecoration.underline,
+                                                                              fontWeight: FontWeight.w400,
+                                                                              fontStyle: FontStyle.normal,
+                                                                              fontSize: MediaQuery.of(context).size.width * .1 / 2,
+                                                                              color: Colors.black.withOpacity(0.7)),
+                                                                        )
                                                     ]),
                                               ),
                                             ),
