@@ -19,6 +19,10 @@ flutter pub get
 ```
 flutter run
 ```
+### images
+
+![Screenshot_1642745057](https://user-images.githubusercontent.com/39925526/150475665-95d82a8f-d954-4d79-86ab-a9b1d43fdcc0.png)
+
 
 
 ## ✒️ Autor
