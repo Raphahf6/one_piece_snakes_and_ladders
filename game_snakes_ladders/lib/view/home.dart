@@ -1,4 +1,3 @@
-import 'package:demoji/demoji.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
@@ -27,6 +26,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    List enel = [8, 15, 16];
     return Scaffold(
       backgroundColor: Color(0xff02B2D42),
       appBar: AppBar(
@@ -110,7 +110,7 @@ class _HomeState extends State<Home> {
                                                   mainAxisAlignment:
                                                       MainAxisAlignment.center,
                                                   children: [
-                                                    index % 9 == 8
+                                                    index % 15 == 4
                                                         ? Center(
                                                             child: Image.asset(
                                                               'assets/img/enel.png',
@@ -120,7 +120,7 @@ class _HomeState extends State<Home> {
                                                           )
 
                                                         //se a cor for marrom
-                                                        : index % 10 == 7
+                                                        : index % 15 == 7
                                                             ? Image.asset(
                                                                 'assets/img/nami.png')
                                                             : Text(
