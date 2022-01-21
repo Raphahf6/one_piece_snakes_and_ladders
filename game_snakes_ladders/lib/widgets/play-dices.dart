@@ -6,10 +6,15 @@ import 'package:game_snakes_ladders/stores/snakes-ladders.dart';
 import 'package:game_snakes_ladders/widgets/dice-item.dart';
 import 'package:game_snakes_ladders/widgets/utils.dart';
 import 'package:spring/spring.dart';
+import 'package:game_snakes_ladders/view/home.dart';
 
 class PlayDices extends StatefulWidget {
-  PlayDices({Key key, this.snakeLaddersStore, this.dicesOne, this.dicesTwo})
-      : super(key: key);
+  PlayDices({
+    Key key,
+    this.snakeLaddersStore,
+    this.dicesOne,
+    this.dicesTwo,
+  }) : super(key: key);
   SnakesLadders snakeLaddersStore;
   int dicesOne;
   int dicesTwo;
@@ -19,7 +24,7 @@ class PlayDices extends StatefulWidget {
 }
 
 class _PlayDicesState extends State<PlayDices> {
-  int total;
+  double total;
 
   @override
   Widget build(BuildContext context) {

@@ -20,13 +20,9 @@ class AvatarPlayer extends StatelessWidget {
           width: 85,
           child: player == 1
               ? Container(
-                  width: 90,
-                  height: 90,
                   child: Image.asset('assets/img/zoro.png'),
                 )
               : Container(
-                  width: 90,
-                  height: 90,
                   child: Image.asset('assets/img/luffy.png'),
                 ),
         ),

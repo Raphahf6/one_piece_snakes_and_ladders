@@ -1,4 +1,3 @@
-
 import 'package:game_snakes_ladders/consts/snakes_ladders.dart';
 import 'package:game_snakes_ladders/widgets/utils.dart';
 import 'package:mobx/mobx.dart';
@@ -51,7 +50,8 @@ abstract class _SnakesLaddersBase with Store {
 
       var element = SnakesLaddersConst.snakesLadders
           .where((element) => element['position'] == _totalPlayerOne);
-      if (element.isNotEmpty) utils.dialogRules(context, element, _currentPlayer);
+      if (element.isNotEmpty)
+        utils.dialogRules(context, element, _currentPlayer);
     }
 
     if (_currentPlayer == 2) {
@@ -60,7 +60,8 @@ abstract class _SnakesLaddersBase with Store {
       _totalPlayerTwo = total > 100 ? _totalPlayerTwo : total;
       var element = SnakesLaddersConst.snakesLadders
           .where((element) => element['position'] == _totalPlayerTwo);
-      if (element.isNotEmpty) utils.dialogRules(context, element, _currentPlayer);
+      if (element.isNotEmpty)
+        utils.dialogRules(context, element, _currentPlayer);
     }
 
     if (_totalPlayerTwo == 100 || _totalPlayerOne == 100)
