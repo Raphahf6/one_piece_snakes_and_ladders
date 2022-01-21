@@ -9,7 +9,7 @@ class Player extends StatelessWidget {
   Widget build(BuildContext context) {
     Utils utils = new Utils();
     return Padding(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

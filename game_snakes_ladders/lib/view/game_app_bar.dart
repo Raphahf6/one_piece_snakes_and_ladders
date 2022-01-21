@@ -7,7 +7,6 @@ class GameAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size mySize = MediaQuery.of(context).size;
     return Stack(
       children: [
         Column(
@@ -80,10 +79,26 @@ class GameAppBar extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 40, right: 40, top: 10),
+              padding: const EdgeInsets.only(left: 48, right: 48, top: 10),
               child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text('Zoro'), Text(''), Text('Luffy')]),
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Text(
+                      'Zoro',
+                      style: TextStyle(
+                          height: MediaQuery.of(context).textScaleFactor,
+                          fontSize: MediaQuery.of(context).size.width * .1 / 2,
+                          letterSpacing: 1),
+                    ),
+                    Spacer(),
+                    Text(
+                      'Luffy',
+                      style: TextStyle(
+                          height: MediaQuery.of(context).textScaleFactor,
+                          fontSize: MediaQuery.of(context).size.width * .1 / 2,
+                          letterSpacing: 1),
+                    )
+                  ]),
             ),
           ],
         ),

@@ -29,6 +29,9 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Color(0xff02B2D42),
       appBar: AppBar(
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(40))),
+        elevation: 5,
         toolbarHeight: MediaQuery.of(context).size.height * .2,
         backgroundColor: Colors.transparent,
         title: GameAppBar(),
@@ -199,9 +202,11 @@ class _HomeState extends State<Home> {
           ),
         ],
       ),
-      bottomNavigationBar: Footer(
-        snakeLaddersStore: _snakesLaddersStore,
-      ),
+      bottomNavigationBar: BottomAppBar(
+          color: Colors.white,
+          child: Footer(
+            snakeLaddersStore: _snakesLaddersStore,
+          )),
     );
   }
 }

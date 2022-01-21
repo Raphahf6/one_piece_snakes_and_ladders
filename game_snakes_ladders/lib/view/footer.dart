@@ -13,7 +13,7 @@ class Footer extends StatelessWidget {
       name: 'PlayDices',
       builder: (BuildContext context) {
         return Container(
-          height: 100,
+          height: MediaQuery.of(context).size.height * .1,
           decoration: BoxDecoration(
             color: Color(0xffD62246),
             boxShadow: [
