@@ -58,7 +58,6 @@ abstract class _SnakesLaddersBase with Store {
 
     if (_currentPlayer == 2) {
       var total = _totalPlayerTwo + diceOne + diceTwo;
-      int dices = diceOne + diceTwo;
 
       if (total > 100) utils.dialogRulesWin(context, _currentPlayer, total);
       _totalPlayerTwo = total > 100 ? _totalPlayerTwo : total;
