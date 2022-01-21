@@ -108,7 +108,10 @@ class _HomeState extends State<Home> {
                                                                   .size
                                                                   .width *
                                                               .1 /
-                                                              5)),
+                                                              5),
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          10)),
                                               child: Center(
                                                 child: Row(
                                                     mainAxisAlignment:
