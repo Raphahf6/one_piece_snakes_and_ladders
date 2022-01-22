@@ -25,7 +25,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff02B2D42),
+      backgroundColor: Color(0xff0153B50),
       appBar: AppBar(
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(40))),

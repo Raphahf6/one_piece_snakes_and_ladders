@@ -78,27 +78,35 @@ class GameAppBar extends StatelessWidget {
                 ),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 30, right: 30, top: 10),
-              child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Text(
-                      'Zoro',
-                      style: TextStyle(
-                          height: MediaQuery.of(context).textScaleFactor,
-                          fontSize: MediaQuery.of(context).size.width * .1 / 2,
-                          letterSpacing: 1),
-                    ),
-                    Spacer(),
-                    Text(
-                      'Luffy',
-                      style: TextStyle(
-                          height: MediaQuery.of(context).textScaleFactor,
-                          fontSize: MediaQuery.of(context).size.width * .1 / 2,
-                          letterSpacing: 1),
-                    )
-                  ]),
+            Container(
+              height: MediaQuery.of(context).size.height * .2 / 5,
+              child: Padding(
+                padding: const EdgeInsets.only(
+                  right: 45,
+                  left: 45,
+                ),
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text(
+                        'Zoro',
+                        style: TextStyle(
+                            height: MediaQuery.of(context).textScaleFactor,
+                            fontSize:
+                                MediaQuery.of(context).size.width * .1 / 2,
+                            letterSpacing: 1),
+                      ),
+                      Spacer(),
+                      Text(
+                        'Luffy',
+                        style: TextStyle(
+                            height: MediaQuery.of(context).textScaleFactor,
+                            fontSize:
+                                MediaQuery.of(context).size.width * .1 / 2,
+                            letterSpacing: 1),
+                      )
+                    ]),
+              ),
             ),
           ],
         ),

@@ -158,7 +158,7 @@ class GameBoard extends StatelessWidget {
                                                                           decoration: TextDecoration
                                                                               .underline,
                                                                           fontWeight: FontWeight
-                                                                              .w400,
+                                                                              .bold,
                                                                           fontStyle: FontStyle
                                                                               .normal,
                                                                           fontSize: MediaQuery.of(context).size.width *
