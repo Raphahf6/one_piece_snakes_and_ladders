@@ -27,7 +27,8 @@ flutter pub get
 flutter run
 ```
 ### Print Screen
-![Screenshot_1642756338](https://user-images.githubusercontent.com/39925526/150499712-0001e613-9304-4eaf-a7ad-a65aa5438108.png)
+![Screenshot_1642810658](https://user-images.githubusercontent.com/39925526/150615978-379d579d-4aa5-4d27-b0fd-2fa240375014.png)
+
 
 ### Dialogo
 ![Screenshot_1642754470](https://user-images.githubusercontent.com/39925526/150494705-0195eac3-6e0e-4043-a7a9-e14d5c88f3dc.png)
