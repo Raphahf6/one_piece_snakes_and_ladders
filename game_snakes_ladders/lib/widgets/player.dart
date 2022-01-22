@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:game_snakes_ladders/widgets/utils.dart';
+import 'package:game_snakes_ladders/widgets/game_alerts.dart';
 
 class Player extends StatelessWidget {
   const Player({Key key, this.numPlayer}) : super(key: key);
@@ -7,7 +7,7 @@ class Player extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Utils utils = new Utils();
+    GameAlerts utils = new GameAlerts();
     return Padding(
       padding: const EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
       child: Row(

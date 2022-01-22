@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:game_snakes_ladders/consts/dices.dart';
 import 'package:game_snakes_ladders/stores/snakes-ladders.dart';
 import 'package:game_snakes_ladders/widgets/dice-item.dart';
-import 'package:game_snakes_ladders/widgets/utils.dart';
+import 'package:game_snakes_ladders/widgets/game_alerts.dart';
 import 'package:spring/spring.dart';
 
 class PlayDices extends StatefulWidget {
@@ -49,7 +49,7 @@ class _PlayDicesState extends State<PlayDices> {
             onPressed: () {
               if (widget.snakeLaddersStore.totalPlayerOne == 100 ||
                   widget.snakeLaddersStore.totalPlayerTwo == 100) {
-                Utils.dialogFinish(context);
+                GameAlerts.dialogFinish(context);
               } else {
                 var diceOne = 1 + random.nextInt(5);
                 var diceTwo = 1 + random.nextInt(5);

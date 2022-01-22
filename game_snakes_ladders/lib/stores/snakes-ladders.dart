@@ -1,12 +1,12 @@
 import 'package:game_snakes_ladders/consts/snakes_ladders.dart';
-import 'package:game_snakes_ladders/widgets/utils.dart';
+import 'package:game_snakes_ladders/widgets/game_alerts.dart';
 import 'package:mobx/mobx.dart';
 part 'snakes-ladders.g.dart';
 
 class SnakesLadders = _SnakesLaddersBase with _$SnakesLadders;
 
 abstract class _SnakesLaddersBase with Store {
-  Utils utils = new Utils();
+  GameAlerts alertsGameDialogs = new GameAlerts();
 
   @observable
   int _currentPlayer = 1;
@@ -46,30 +46,34 @@ abstract class _SnakesLaddersBase with Store {
     if (_currentPlayer == 1) {
       var total = _totalPlayerOne + diceOne + diceTwo;
 
-      if (total > 100) utils.dialogRulesWin(context, _currentPlayer, total);
+      if (total > 100)
+        alertsGameDialogs.dialogRulesWin(context, _currentPlayer, total);
       _totalPlayerOne = total > 100 ? _totalPlayerOne : total;
 
       var element = SnakesLaddersConst.snakesLadders
           .where((element) => element['position'] == _totalPlayerOne);
       if (element.isNotEmpty)
-        utils.dialogRules(context, element, _currentPlayer);
-      utils.dialog(context, total, _currentPlayer, diceOne, diceTwo);
+        alertsGameDialogs.dialogRules(context, element, _currentPlayer);
+      alertsGameDialogs.dialog(
+          context, total, _currentPlayer, diceOne, diceTwo);
     }
 
     if (_currentPlayer == 2) {
       var total = _totalPlayerTwo + diceOne + diceTwo;
 
-      if (total > 100) utils.dialogRulesWin(context, _currentPlayer, total);
+      if (total > 100)
+        alertsGameDialogs.dialogRulesWin(context, _currentPlayer, total);
       _totalPlayerTwo = total > 100 ? _totalPlayerTwo : total;
       var element = SnakesLaddersConst.snakesLadders
           .where((element) => element['position'] == _totalPlayerTwo);
       if (element.isNotEmpty)
-        utils.dialogRules(context, element, _currentPlayer);
-      utils.dialog(context, total, _currentPlayer, diceOne, diceTwo);
+        alertsGameDialogs.dialogRules(context, element, _currentPlayer);
+      alertsGameDialogs.dialog(
+          context, total, _currentPlayer, diceOne, diceTwo);
     }
 
     if (_totalPlayerTwo == 100 || _totalPlayerOne == 100) {
-      Utils.dialogWin(context, _currentPlayer);
+      GameAlerts.dialogWin(context, _currentPlayer);
     }
 
     if (diceOne != diceTwo) _currentPlayer = _currentPlayer == 1 ? 2 : 1;

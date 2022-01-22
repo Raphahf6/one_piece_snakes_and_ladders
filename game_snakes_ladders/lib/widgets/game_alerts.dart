@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:game_snakes_ladders/stores/snakes-ladders.dart';
 import 'package:get_it/get_it.dart';
 
-class Utils {
+class GameAlerts {
   SnakesLadders snakesLaddersStore;
 
-  Utils({SnakesLadders snakesLaddersStore}) {
+  GameAlerts({SnakesLadders snakesLaddersStore}) {
     this.snakesLaddersStore = snakesLaddersStore;
   }
 
