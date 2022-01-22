@@ -85,9 +85,9 @@ class GameBoard extends StatelessWidget {
                                           decoration: BoxDecoration(
                                               boxShadow: [
                                                 BoxShadow(
-                                                    offset: const Offset(1, 5),
-                                                    blurRadius: 45,
-                                                    color: Colors.black87)
+                                                    offset: const Offset(0, 0),
+                                                    blurRadius: 10,
+                                                    color: Colors.black)
                                               ],
                                               color: color,
                                               border: Border.all(
