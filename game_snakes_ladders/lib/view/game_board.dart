@@ -80,9 +80,15 @@ class GameBoard extends StatelessWidget {
                                   return Stack(
                                     children: [
                                       Padding(
-                                        padding: const EdgeInsets.all(2.2),
+                                        padding: const EdgeInsets.all(3),
                                         child: Container(
                                           decoration: BoxDecoration(
+                                              boxShadow: [
+                                                BoxShadow(
+                                                    offset: const Offset(1, 5),
+                                                    blurRadius: 45,
+                                                    color: Colors.black87)
+                                              ],
                                               color: color,
                                               border: Border.all(
                                                   color: Colors.black38,

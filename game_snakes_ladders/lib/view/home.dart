@@ -36,10 +36,9 @@ class _HomeState extends State<Home> {
       ),
       body: GameBoard(snakesLaddersStore: _snakesLaddersStore),
       bottomNavigationBar: BottomAppBar(
-          color: Colors.white,
           child: Footer(
-            snakeLaddersStore: _snakesLaddersStore,
-          )),
+        snakeLaddersStore: _snakesLaddersStore,
+      )),
     );
   }
 }
