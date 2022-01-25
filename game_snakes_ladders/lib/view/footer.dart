@@ -15,12 +15,11 @@ class Footer extends StatelessWidget {
         return Container(
           height: MediaQuery.of(context).size.height * .1,
           decoration: BoxDecoration(
-            color: Color(0xffD62246),
             boxShadow: [
               BoxShadow(
-                  offset: const Offset(0, -5),
-                  blurRadius: 10,
-                  color: Color(0xffD62246))
+                offset: const Offset(0, -5),
+                blurRadius: 10,
+              )
             ],
             border: Border.all(color: Color(0xffD62246), width: 3),
           ),

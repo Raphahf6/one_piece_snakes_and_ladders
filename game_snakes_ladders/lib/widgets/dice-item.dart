@@ -17,11 +17,9 @@ class DiceItem extends StatelessWidget {
           endAngle: 720,
           animDuration: Duration(milliseconds: 300),
           animStatus: (AnimStatus status) {},
-          child: Image.asset(
-            dice,
-            height: MediaQuery.of(context).size.height * .2 / 2,
-            width: MediaQuery.of(context).size.width * .1,
-          )),
+          child: Image.asset(dice,
+              height: MediaQuery.of(context).size.height * .2 / 2,
+              width: MediaQuery.of(context).size.width * .1)),
     );
   }
 }

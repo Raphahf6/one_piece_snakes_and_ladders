@@ -25,8 +25,7 @@ class Player extends StatelessWidget {
                   color: Colors.white70),
             )),
             decoration: BoxDecoration(
-                border: Border.all(color: Color(0xffD62246)),
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.all(Radius.elliptical(5, 20)),
                 boxShadow: [BoxShadow(color: Color(0xffD62246))]),
           ),
           ElevatedButton(
@@ -38,8 +37,12 @@ class Player extends StatelessWidget {
               color: Colors.white70,
               size: 25,
             ),
-            style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Color(0xffD62246))),
+            style: ElevatedButton.styleFrom(
+                primary: Color(0xff0D62246),
+                elevation: 30,
+                shape: const BeveledRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10)))),
+            // ButtonStyle( backgroundColor: MaterialStateProperty.all(Color(0xffD62246))),
           ),
         ],
       ),

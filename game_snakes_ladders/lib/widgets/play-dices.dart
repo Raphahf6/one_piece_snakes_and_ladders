@@ -29,46 +29,50 @@ class _PlayDicesState extends State<PlayDices> {
   Widget build(BuildContext context) {
     final random = new Random();
 
-    return BottomAppBar(
-      color: const Color(0xff0C1B33),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          DiceItem(
-            dice: DicesConst.dice(
-              widget.dicesOne.toString(),
+    return ClipRRect(
+      borderRadius: BorderRadius.all(Radius.circular(30)),
+      child: BottomAppBar(
+        color: const Color(0xff0C1B33),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            DiceItem(
+              dice: DicesConst.dice(
+                widget.dicesOne.toString(),
+              ),
+              springController: SpringController(initialAnim: Motion.play),
             ),
-            springController: SpringController(initialAnim: Motion.play),
-          ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-                primary: Color(0xff0D62246),
-                elevation: 30,
-                shape: const BeveledRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10)))),
-            onPressed: () {
-              if (widget.snakeLaddersStore.totalPlayerOne == 100 ||
-                  widget.snakeLaddersStore.totalPlayerTwo == 100) {
-                GameAlerts.dialogFinish(context);
-              } else {
-                var diceOne = 1 + random.nextInt(5);
-                var diceTwo = 1 + random.nextInt(5);
-                widget.snakeLaddersStore.play(diceOne, diceTwo, context);
-                total == widget.dicesOne + diceTwo;
-              }
-            },
-            child: Text(
-              'JOGAR',
-              style: TextStyle(color: Colors.white70),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  primary: Color(0xff0D62246),
+                  elevation: 30,
+                  shape: const BeveledRectangleBorder(
+                      borderRadius:
+                          BorderRadius.all(Radius.elliptical(5, 20)))),
+              onPressed: () {
+                if (widget.snakeLaddersStore.totalPlayerOne == 100 ||
+                    widget.snakeLaddersStore.totalPlayerTwo == 100) {
+                  GameAlerts.dialogFinish(context);
+                } else {
+                  var diceOne = 1 + random.nextInt(5);
+                  var diceTwo = 1 + random.nextInt(5);
+                  widget.snakeLaddersStore.play(diceOne, diceTwo, context);
+                  total == widget.dicesOne + diceTwo;
+                }
+              },
+              child: Text(
+                'JOGAR',
+                style: TextStyle(color: Colors.white70),
+              ),
             ),
-          ),
-          DiceItem(
-            dice: DicesConst.dice(
-              widget.dicesTwo.toString(),
+            DiceItem(
+              dice: DicesConst.dice(
+                widget.dicesTwo.toString(),
+              ),
+              springController: SpringController(initialAnim: Motion.play),
             ),
-            springController: SpringController(initialAnim: Motion.play),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

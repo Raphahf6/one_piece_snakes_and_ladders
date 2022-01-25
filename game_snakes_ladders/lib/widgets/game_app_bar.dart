@@ -33,8 +33,8 @@ class GameAppBar extends StatelessWidget {
                     child: Center(
                       child: Image.asset(
                         'assets/img/zoro.png',
-                        width: MediaQuery.of(context).size.width * .1,
-                        height: MediaQuery.of(context).size.height * .1,
+                        width: MediaQuery.of(context).size.width * .2 / 1.7,
+                        height: MediaQuery.of(context).size.height * .2 / 1.7,
                       ),
                     ),
                   ),
@@ -71,8 +71,8 @@ class GameAppBar extends StatelessWidget {
                     child: Center(
                         child: Image.asset(
                       'assets/img/luffy.png',
-                      width: MediaQuery.of(context).size.width * .1,
-                      height: MediaQuery.of(context).size.height * .1,
+                      width: MediaQuery.of(context).size.width * .2 / 1.7,
+                      height: MediaQuery.of(context).size.height * .2 / 1.7,
                     )),
                   ),
                 ),
